@@ -93,7 +93,7 @@ GREYSON_HOME_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text="Add Grayson to chat", url="t.me/MissElora_bot?startgroup=true"),
+            text="Add Elora to chat", url="t.me/MissElora_bot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="About", callback_data="greyson_"),
