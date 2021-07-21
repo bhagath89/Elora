@@ -101,7 +101,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="Configuration Tutorial", callback_data="tutmanu_VID"
+            text="🎥 Configuration Tutorial 🎥", callback_data="tutmanu_"
         ),
     ],
 ]
