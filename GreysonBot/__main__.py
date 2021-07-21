@@ -97,7 +97,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="About", callback_data="greyson_"),
-        InlineKeyboardButton(text="Support", url=http://t.me/Noobiezhub"),
+        InlineKeyboardButton(text="Support", callback_data="support_"),
     ],
     [
         InlineKeyboardButton(
