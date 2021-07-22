@@ -109,8 +109,8 @@ buttons = [
 gbuttons = [[InlineKeyboardButton(text="help",
                                   url="http://t.me/MissElora_bot?start=help")]]
 
-videobuttons = [[InlineKeyboardButton(text="Done",
-                                  callback_data="tutmanu_home")]]
+videobuttons = [[InlineKeyboardButton(text="Creator",
+                                  url=f"https://t.me/Itzmezeus")]]
 
 HELP_STRINGS = """
 *Help*
@@ -257,8 +257,8 @@ def send_start(update, context):
     chat = update.effective_chat  # type: Optional[Chat]
     first_name = update.effective_user.first_name
     text = PM_START_TEXT
-    keyboard = [[InlineKeyboardButton(text="Add me",url="t.me/MissElora_bot?startgroup=true"),InlineKeyboardButton(text="Help",callback_data="help_back")]]
-    keyboard += [[InlineKeyboardButton(text="Connect", callback_data="main_connect"),InlineKeyboardButton(text="Tutorial",callback_data="tutmanu_")]]
+    keyboard = [[InlineKeyboardButton(text="Add Me",url="t.me/MissElora_bot?startgroup=true"),InlineKeyboardButton(text="Help",callback_data="help_back")]]
+    keyboard += [[InlineKeyboardButton(text="Creator", url=f"https://t.me/itzmezeus"),InlineKeyboardButton(text="Support",url=f"https://t.me/zabotz")]]
 
     update.effective_message.reply_text(
         PM_START_TEXT,
@@ -266,7 +266,7 @@ def send_start(update, context):
         parse_mode=ParseMode.MARKDOWN,
         timeout=60,
         disable_web_page_preview=False,
-    )
+      
 
 def error_handler(update, context):
     """Log the error and send a telegram message to notify the developer."""
