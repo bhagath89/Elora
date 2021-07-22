@@ -101,7 +101,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="🎥 Configuration Tutorial 🎥", callback_data="tutmanu_"
+            text="✨Support✨", url="https://t.me/Zabotz"
         ),
     ],
 ]
