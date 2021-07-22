@@ -101,7 +101,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="✨Support✨", url="https://t.me/Zabotz"
+            text="✨Support✨", url=f"https://t.me/Zabotz"
         ),
     ],
 ]
