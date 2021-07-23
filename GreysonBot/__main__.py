@@ -75,16 +75,16 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hello , I am [Greyson](https://telegra.ph/file/83dbae46536c4f88a28b7.jpg) - I'm here to help you to manage your chats with ease. 
+Hello , I am [Elora](https://telegra.ph/file/9c1eed4265027ca8ea63b.jpg) - I'm here to help you to manage your chats with easy. 
 
-➡️ Just add me in your group as admin .
+Just add me in your group as admin .
 
 Hit /help to know my commands .
 
-You can get my news everyday [here](t.me/GraysonNews) .
+You can get my news everyday [here](t.me/Zabotz) .
 """
 G_START_TEXT = """
-Hello Greyson here , How can I help you ?
+Hello Elora here , How can I help you ?
 """
 GREYSON_HOME_TEXT = """
 *Excellent!* \nNow the Bot is ready to use!\n\nUse /help to Know all modules and features
@@ -93,28 +93,28 @@ GREYSON_HOME_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ Add Grayson to chat!  ➕️", url="t.me/MrGreysonBot?startgroup=true"),
+            text="Add me to your chat", url="t.me/misselora_bot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="ℹ️ About", callback_data="greyson_"),
-        InlineKeyboardButton(text="⚒️ Support 🛠", callback_data="support_"),
+        InlineKeyboardButton(text="About", callback_data="greyson_"),
+        InlineKeyboardButton(text="Support", callback_data="support_"),
     ],
     [
         InlineKeyboardButton(
-            text="🎥 Configuration Tutorial 🎥", callback_data="tutmanu_"
+            text="Owner", url=f"https://t.me/itzmezeus"
         ),
     ],
 ]
 
-gbuttons = [[InlineKeyboardButton(text="⚙️ help ⚙️",
-                                  url="http://t.me/MrGreysonBot?start=help")]]
+gbuttons = [[InlineKeyboardButton(text="help",
+                                  url="http://t.me/MissElora_bot?start=help")]]
 
-videobuttons = [[InlineKeyboardButton(text="✅ Done ✅",
+videobuttons = [[InlineKeyboardButton(text="Done",
                                   callback_data="tutmanu_home")]]
 
 HELP_STRINGS = """
 *Help*
-Hey! My name is Greyson . I am a group management bot, here to help you get around and keep the order in your groups!
+Hey! My name is Elora . I am a group management bot, here to help you get around and keep the order in your groups!
 
 I have lots of handy features, such as flood control, a warning system, a note keeping system, and even predetermined replies on certain keywords.
 
@@ -123,14 +123,13 @@ I have lots of handy features, such as flood control, a warning system, a note k
 ✪ /help: Sends this message; I'll tell you more about myself!
 ✪ /source: Gives you my source .
 
-If you have any bugs or questions on how to use me head to @GreysonChats. \n\nAll commands can be used with the following: / !\n\nAnd the following :-"""
+If you have any bugs or questions on how to use me head to @NoobieZhub. \n\nAll commands can be used with the following: / !\n\nAnd the following :-"""
 
-GreysonG_IMG = "https://telegra.ph/file/83dbae46536c4f88a28b7.jpg"
+GreysonG_IMG = "https://telegra.ph/file/9c1eed4265027ca8ea63b.jpg"
 
 Greysontut_VID = "https://telegra.ph/file/f0df0d42c1d2a189d8c61.mp4"
 
-SOURCE_STRING = """Oh you want my source . I am built in python 3 , Using the python-telegram-bot library, and am fully opensource . \n\nHere is my source below 👇
-⚙️ Source ⚙️ -  [Click here](https://github.com/Kunal-Diwan/GreysonBot) ."""
+SOURCE_STRING = ""[🧚‍♀️𝙎𝙊𝙐𝙍𝘾𝙀🧚‍♀️](https://t.me/neepodamonkey)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -259,8 +258,8 @@ def send_start(update, context):
     chat = update.effective_chat  # type: Optional[Chat]
     first_name = update.effective_user.first_name
     text = PM_START_TEXT
-    keyboard = [[InlineKeyboardButton(text="➕ Add me ➕",url="t.me/MrGreysonBot?startgroup=true"),InlineKeyboardButton(text="⚙️ Help ⚙️",callback_data="help_back")]]
-    keyboard += [[InlineKeyboardButton(text="🌐 Connect 🌐", callback_data="main_connect"),InlineKeyboardButton(text="📱Tutorial📱",callback_data="tutmanu_")]]
+    keyboard = [[InlineKeyboardButton(text="🧚‍♀️ Add me 🧚‍♀️",url="t.me/misselora_bot?startgroup=true"),InlineKeyboardButton(text="🧚‍♀️ Help 🧚‍♀️",callback_data="help_back")]]
+    keyboard += [[InlineKeyboardButton(text="🧚‍♀️ Connect 🧚‍♀️", callback_data="main_connect"),InlineKeyboardButton(text="🧚‍♀️ Tutorial 🧚‍♀️",callback_data="tutmanu_")]]
 
     update.effective_message.reply_text(
         PM_START_TEXT,
@@ -398,12 +397,10 @@ def greyson_about_callback(update, context):
     query = update.callback_query
     if query.data == "greyson_":
         query.message.edit_text(
-            text=""" My name is *Greyson* , I have been written in python3 using mixed libraries. I'm online since 14 June 2021 and is constantly updated! \n
+            text=""" My name is *Elora* , I have been written in python3 using mixed libraries. I'm online since 23 July 2021 and is constantly updated! \n
 *Bot Version*: _3.1_ \n
 *Bot Admins* : 
-• @kunaldiwan - bot creator and main developer 
-• @Grizzypal - server manager and developer
-• @Jimmioooo - support director \n
+• [bot creator and main developer](https://t.me/Zeus_Of_TG)
 *And finally special thanks of gratitude to all my users who relied on me for managing their groups, I hope you will always like me; My developers are constantly working to improve me!*""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -430,7 +427,7 @@ def Greyson_tut_callback(update, context):
     query = update.callback_query
     if query.data == "tutmanu_":
         query.message.edit_text(
-            text=f"*Welcome to the Greyson configuration tutorial.* "
+            text=f"*Welcome to the Elora configuration tutorial.* "
             f"\n\n👇 The first thing to do is to *add Greyson to your group*! For doing that, press the under button and select your group, then press *Done* to continue the tutorial. 👇",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -438,10 +435,10 @@ def Greyson_tut_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="➕️ Add Grayson to chat!  ➕️", url="t.me/MrGreysonBot?startgroup=true"
+                            text="🧚‍♀️ Add Elora to chat 🧚‍♀️", url="t.me/misselora_bot?startgroup=true"
                         )
                     ],
-                    [InlineKeyboardButton(text="✅ Done ✅", callback_data="tutmanu_howto")],
+                    [InlineKeyboardButton(text="🧚‍♀️ Done 🧚‍♀️", callback_data="tutmanu_howto")],
                 ]
             ),
         )
@@ -450,7 +447,7 @@ def Greyson_tut_callback(update, context):
             text=f"* Ok, well done! *"
             f"\nNow for let me work correctly, you need to make me *Admin of your Group*! \n"
             f"\nTo do that, follow this easy steps:\n"
-            f"▫️ Go to your group \n▫️ Press the Group's name \n▫️ Press Modify \n▫️ Press on Administrator \n▫️ Press Add Administrator \n▫️ Press the Magnifying Glass \n▫️ Search @MrGreysonBot \n▫️ Confirm"
+            f"▫️ Go to your group \n▫️ Press the Group's name \n▫️ Press Modify \n▫️ Press on Administrator \n▫️ Press Add Administrator \n▫️ Press the Magnifying Glass \n▫️ Search @MissElora_bot \n▫️ Confirm"
             f"",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -458,10 +455,10 @@ def Greyson_tut_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="💾 Example Video 💾", callback_data="tutmanu_video"
+                            text="🧚‍♀️ Example Video 🧚‍♀️", callback_data="tutmanu_video"
                         ),
                     ],
-                    [InlineKeyboardButton(text="✅ Done ✅", callback_data="tutmanu_home")],
+                    [InlineKeyboardButton(text="🧚‍♀️ Done 🧚‍♀️", callback_data="tutmanu_home")],
                 ]
             ),
         )
@@ -471,7 +468,7 @@ def Greyson_tut_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="🏡 Home 🏡", callback_data="bot_start")]]
+                [[InlineKeyboardButton(text="🧚‍♀️ Home 🧚‍♀️", callback_data="bot_start")]]
             ),
         )
 
@@ -489,8 +486,8 @@ def Support_about_callback(update, context):
     query = update.callback_query
     if query.data == "support_":
         query.message.edit_text(
-            text=""" Hi 👋 I'm *Greyson*
-                 \nCheck my support below 👇\n\nNews channel 📣 - @GraysonNews \nSupport Chat 💬 - @GreysonChats. \n\n*Then also your query has not solved you can contact Main developer 👨‍💻* - @kunaldiwan . """,
+            text=""" Hi 🧚‍♀️ I'm *Elora*
+                 \nCheck my support below 👇\n\nNews channel 📣 - @Zabotz \nSupport Chat 💬 - @noobiezhub. \n\n*Then also your query has not solved you can contact Main developer 👨‍💻* - @ItzmeZeus . """,
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -838,11 +835,11 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("Greyson Running ......")
+        LOGGER.info("🧚‍♀️Yes am alive🧚‍♀️")
         updater.start_polling(timeout=15, read_latency=4, clean=True)
         updater.bot.send_message(
             chat_id=MESSAGE_DUMP,
-            text="I have been deployed successfully ...... Ready to run 🏃 ")
+            text="🧚‍♀️ Am Alive ")
 
     if len(argv) not in (1, 3, 4):
         telethn.disconnect()
