@@ -129,7 +129,7 @@ GreysonG_IMG = "https://telegra.ph/file/9c1eed4265027ca8ea63b.jpg"
 
 Greysontut_VID = "https://telegra.ph/file/f0df0d42c1d2a189d8c61.mp4"
 
-SOURCE_STRING = ""[🧚‍♀️𝙎𝙊𝙐𝙍𝘾𝙀🧚‍♀️](https://t.me/neepodamonkey)"""
+SOURCE_STRING = """[🧚‍♀️𝙎𝙊𝙐𝙍𝘾𝙀🧚‍♀️](https://t.me/neepodamonkey)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
