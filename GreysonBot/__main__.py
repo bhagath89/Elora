@@ -438,7 +438,7 @@ def Greyson_tut_callback(update, context):
                             text="🧚‍♀️ Add Elora to chat 🧚‍♀️", url="t.me/misselora_bot?startgroup=true"
                         )
                     ],
-                    [InlineKeyboardButton(text="🧚‍♀️ Done 🧚‍♀️", callback_data="tutmanu_howto")],
+                    [InlineKeyboardButton(text="🧚‍♀️ Owner 🧚‍♀️", url="https://t.me/itzmeZeus")],
                 ]
             ),
         )
