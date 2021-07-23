@@ -259,7 +259,7 @@ def send_start(update, context):
     first_name = update.effective_user.first_name
     text = PM_START_TEXT
     keyboard = [[InlineKeyboardButton(text="🧚‍♀️ Add me 🧚‍♀️",url="t.me/misselora_bot?startgroup=true"),InlineKeyboardButton(text="🧚‍♀️ Creator 🧚‍♀️",url="https://t.me/itzmeZeus")]]
-    keyboard += [[InlineKeyboardButton(text="🧚‍♀️ Connect 🧚‍♀️", callback_data="main_connect"),InlineKeyboardButton(text="🧚‍♀️ Tutorial 🧚‍♀️",callback_data="tutmanu_")]]
+    keyboard += [[InlineKeyboardButton(text="🧚‍♀️ Support 🧚‍♀️", url="https://t.me/Noobiezhub"),InlineKeyboardButton(text="🧚‍♀️ Channel 🧚‍♀️",url="https://t.me/Zabotz")]]
 
     update.effective_message.reply_text(
         PM_START_TEXT,
@@ -428,7 +428,7 @@ def Greyson_tut_callback(update, context):
     if query.data == "tutmanu_":
         query.message.edit_text(
             text=f"*Welcome to the Elora configuration tutorial.* "
-            f"\n\n👇 The first thing to do is to *add Greyson to your group*! For doing that, press the under button and select your group, then press *Done* to continue the tutorial. 👇",
+            f"\n\n👇 The first thing to do is to *add Elora to your group*! For doing that, press the under button and select your group,",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
